@@ -6,7 +6,7 @@
 
 <title>Miles for Smiles Tours & Travels</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -15,15 +15,13 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
-}
-
-html{
 scroll-behavior:smooth;
 }
 
 body{
-background:#f7fafc;
+background:#ffffff;
 color:#222;
+overflow-x:hidden;
 }
 
 header{
@@ -31,193 +29,128 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-background:#004aad;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 8%;
-z-index:999;
-box-shadow:0 3px 10px rgba(0,0,0,.2);
+background:rgba(7,18,58,.92);
+backdrop-filter:blur(10px);
+z-index:1000;
 }
 
 .logo{
 display:flex;
 align-items:center;
-font-size:28px;
-font-weight:700;
-color:white;
+gap:15px;
 }
 
 .logo img{
-width:80px;
-height:80px;
+width:58px;
+height:58px;
+background:#fff;
 border-radius:8px;
+padding:5px;
 }
-margin-right:12px;
+
+.logo h2{
+color:#fff;
+font-size:34px;
+font-weight:800;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:35px;
 }
 
 nav a{
-color:white;
 text-decoration:none;
-margin-left:25px;
+color:#fff;
 font-weight:600;
 transition:.3s;
 }
 
 nav a:hover{
-color:#ffd54f;
+color:#00ff99;
 }
 
 .hero{
-
 height:100vh;
-
 background:
 linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1600');
-
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
 background-size:cover;
-
 background-position:center;
-
 display:flex;
-
 justify-content:center;
-
 align-items:center;
-
 text-align:center;
-
 padding:20px;
+}
 
-color:white;
-
+.hero-content{
+max-width:950px;
 }
 
 .hero h1{
-
-font-size:64px;
-
+font-size:68px;
+font-weight:800;
+color:#fff;
+line-height:1.15;
 margin-bottom:20px;
-
 }
 
 .hero p{
-
 font-size:24px;
+color:#f2f2f2;
+margin-bottom:40px;
+}
 
-margin-bottom:30px;
-
+.buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-
-display:inline-block;
-
 padding:18px 40px;
-
-background:#25D366;
-
-color:white;
-
-font-size:20px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-
-background:#128C7E;
-
-transform:scale(1.05);
-
-}
-
-section{
-
-padding:90px 8%;
-
-}
-
-.title{
-
-text-align:center;
-
-font-size:42px;
-
-margin-bottom:50px;
-
-color:#004aad;
-
+border-radius:50px;
+font-size:18px;
 font-weight:700;
-
-}
-  .cards{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:white;
-border-radius:15px;
-overflow:hidden;
-box-shadow:0 8px 20px rgba(0,0,0,.12);
+text-decoration:none;
 transition:.3s;
 }
 
-.card:hover{
-transform:translateY(-8px);
+.whatsapp{
+background:#25D366;
+color:#fff;
 }
 
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
+.whatsapp:hover{
+transform:translateY(-4px);
 }
 
-.card h3{
-padding:18px;
-color:#004aad;
+.package{
+background:#ffffff;
+color:#07123a;
 }
 
-.card p{
-padding:0 18px 20px;
-}
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.gallery img{
-width:100%;
-height:250px;
-object-fit:cover;
-border-radius:12px;
-transition:.3s;
-}
-
-.gallery img:hover{
-transform:scale(1.04);
-}
-
-footer{
-background:#004aad;
-color:white;
-text-align:center;
-padding:40px 20px;
+.package:hover{
+background:#ffd54f;
 }
 
 @media(max-width:768px){
+
+.logo h2{
+font-size:24px;
+}
+
+nav ul{
+gap:15px;
+font-size:14px;
+}
 
 .hero h1{
 font-size:42px;
@@ -225,14 +158,6 @@ font-size:42px;
 
 .hero p{
 font-size:18px;
-}
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
 }
 
 }
@@ -245,122 +170,194 @@ margin-top:15px;
 <header>
 
 <div class="logo">
-
-<img src="miles for smiles logo.jpg">
-
-Miles for Smiles
-
+<img src="miles for smiles logo.jpg" alt="Logo">
+<h2>Miles for Smiles</h2>
 </div>
 
 <nav>
-
-<a href="#">Home</a>
-
-<a href="#packages">Packages</a>
-
-<a href="#gallery">Gallery</a>
-
-<a href="#contact">Contact</a>
-
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
 </header>
 
 <section class="hero">
 
-<div>
+<div class="hero-content">
 
-<h1>Discover Meghalaya Like Never Before</h1>
+<h1>Discover Meghalaya in Luxury</h1>
 
-<p>Luxury Tours • Honeymoon • Family Trips • Adventure Packages</p>
+<p>Luxury Tours • Honeymoon • Family Trips • Adventure Experiences</p>
 
-<a class="btn" href="https://wa.me/918486467305">
+<div class="buttons">
+
+<a class="btn whatsapp"
+href="https://wa.me/918486467304">
 Book on WhatsApp
+</a>
+
+<a class="btn package"
+href="#packages">
+Explore Packages
 </a>
 
 </div>
 
-</section>
-
-<section id="packages">
-
-<h2 class="title">Popular Tour Packages</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900">
-<h3>Meghalaya Tour</h3>
-<p>Shillong, Cherrapunji, Dawki, Mawlynnong & Living Root Bridge.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900">
-<h3>Assam Tour</h3>
-<p>Kaziranga National Park, Guwahati, Kamakhya Temple and River Cruise.</p>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900">
-<h3>Bhutan Tour</h3>
-<p>Thimphu, Paro, Punakha and Himalayan landscapes.</p>
-</div>
-
 </div>
 
 </section>
-<section id="gallery">
+<style>
 
-<h2 class="title">Meghalaya Gallery</h2>
+.section-title{
+text-align:center;
+font-size:42px;
+font-weight:800;
+margin:80px 0 15px;
+color:#07123a;
+}
 
-<div class="gallery">
+.section-subtitle{
+text-align:center;
+color:#666;
+margin-bottom:50px;
+font-size:18px;
+}
 
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=900">
+.packages{
+padding:40px 8% 90px;
+background:#f8fbff;
+}
 
-<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=900">
+.package-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
 
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=900">
+.card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+transition:.35s;
+}
 
-<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=900">
+.card:hover{
+transform:translateY(-10px);
+}
 
-<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=900">
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
 
-<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900">
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+font-size:28px;
+margin-bottom:10px;
+color:#07123a;
+}
+
+.card-content p{
+color:#666;
+line-height:1.7;
+margin-bottom:20px;
+}
+
+.price{
+font-size:24px;
+font-weight:800;
+color:#00a
+ <section id="about" style="padding:80px 8%;background:#ffffff;">
+
+<h2 class="section-title">Why Choose Miles for Smiles?</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+
+<div class="card">
+<div class="card-content">
+<h3>🏔️ Local Experts</h3>
+<p>Experienced local guides helping you discover the hidden beauty of Northeast India.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>🚗 Comfortable Travel</h3>
+<p>Clean vehicles, professional drivers and carefully selected hotels.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>⭐ Trusted Service</h3>
+<p>Hundreds of happy travellers with personalized holiday experiences.</p>
+</div>
+</div>
 
 </div>
 
 </section>
 
-<section id="contact">
+<section id="gallery" style="padding:80px 8%;background:#f8fbff;">
 
-<h2 class="title">Contact Us</h2>
+<h2 class="section-title">Travel Gallery</h2>
 
-<div style="text-align:center;font-size:20px;line-height:2">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
 
-<p><b>Miles for Smiles Tours & Travels</b></p>
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
+
+</div>
+
+</section>
+
+<section id="contact" style="padding:80px 8%;background:#07123a;color:white;text-align:center;">
+
+<h2 style="font-size:42px;margin-bottom:25px;">Contact Us</h2>
+
+<p style="font-size:20px;">
+<strong>Miles for Smiles Tours & Travels</strong>
+</p>
 
 <p>📞 +91 8486467305</p>
 
 <p>📧 milesforsmilestour@gmail.com</p>
 
-<p>📍 Guwahati, Assam, India</p>
+<p>📍 Shillong (Laban), Meghalaya – 793004</p>
 
-<a class="btn" href="https://wa.me/918486467305">Book Your Tour Now</a>
+<p>📍 Sonapur, Guwahati, Assam – 782402</p>
 
-</div>
+<br>
+
+<a href="https://wa.me/918486467305"
+style="display:inline-block;background:#25D366;color:white;padding:16px 36px;border-radius:40px;text-decoration:none;font-weight:bold;">
+Book on WhatsApp
+</a>
 
 </section>
 
-<footer>
+<footer style="background:#041033;color:white;text-align:center;padding:30px;">
 
 <h3>Miles for Smiles Tours & Travels</h3>
 
 <p>Explore More • Smile More</p>
 
-<p>© 2026 All Rights Reserved.</p>
+<p>© 2026 All Rights Reserved</p>
 
 </footer>
 
 </body>
-
-</html>
+</html> 
