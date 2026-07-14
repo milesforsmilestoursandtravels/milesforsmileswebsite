@@ -1,2 +1,69 @@
-# milesforsmileswebsite
-Official website for Miles for Smiles Tours &amp; Travels. Explore tour packages, book your next trip, and discover unforgettable travel experiences.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miles for Smiles Tours & Travels</title>
+<style>
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f4f9ff;
+    color:#333;
+}
+header{
+    background:#0a5fa8;
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+header img{
+    width:120px;
+}
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+.btn{
+    display:inline-block;
+    background:#28a745;
+    color:white;
+    padding:12px 24px;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:15px;
+}
+footer{
+    background:#0a5fa8;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Miles for Smiles Tours & Travels</h1>
+    <p>Explore More • Smile More</p>
+</header>
+
+<section>
+    <h2>Monsoon Special Packages</h2>
+    <p>Meghalaya • Assam • Arunachal Pradesh • Sikkim • Bhutan</p>
+
+    <h3>Our Services</h3>
+    <p>Flight Tickets | Hotel Booking | Car Rental | Tour Packages | Travel Insurance</p>
+
+    <p><strong>Phone:</strong> +91 8486467305</p>
+    <p><strong>Email:</strong> milesforsmilestour@gmail.com</p>
+
+    <a class="btn" href="https://wa.me/918486467305">Book on WhatsApp</a>
+</section>
+
+<footer>
+<p>© 2026 Miles for Smiles Tours & Travels. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
