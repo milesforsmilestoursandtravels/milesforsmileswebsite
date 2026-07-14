@@ -4,66 +4,229 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Miles for Smiles Tours & Travels</title>
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#f4f9ff;
-    color:#333;
+background:#f5f7fa;
+color:#333;
+line-height:1.6;
 }
+
 header{
-    background:#0a5fa8;
-    color:white;
-    text-align:center;
-    padding:40px 20px;
+background:#0A5FA8;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
-header img{
-    width:120px;
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+color:white;
+font-size:24px;
+font-weight:bold;
 }
-section{
-    padding:40px 20px;
-    text-align:center;
+
+.logo img{
+width:70px;
+border-radius:8px;
 }
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
 .btn{
-    display:inline-block;
-    background:#28a745;
-    color:white;
-    padding:12px 24px;
-    text-decoration:none;
-    border-radius:6px;
-    margin-top:15px;
+display:inline-block;
+background:#28a745;
+color:white;
+padding:15px 35px;
+text-decoration:none;
+border-radius:30px;
+font-size:20px;
 }
-footer{
-    background:#0a5fa8;
-    color:white;
-    text-align:center;
-    padding:20px;
+
+section{
+padding:70px 8%;
 }
+
 </style>
 </head>
+
 <body>
 
 <header>
-    <h1>Miles for Smiles Tours & Travels</h1>
-    <p>Explore More • Smile More</p>
+
+<div class="logo">
+<img src="logo.png">
+<span>Miles for Smiles</span>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Packages</a>
+<a href="#">Gallery</a>
+<a href="#">Contact</a>
+</nav>
+
 </header>
 
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Explore Meghalaya With Us</h1>
+
+<p>Nature • Adventure • Happiness</p>
+
+<a href="https://wa.me/918486467305" class="btn">
+Book on WhatsApp
+</a>
+
+</div>
+
+</section>
 <section>
-    <h2>Monsoon Special Packages</h2>
-    <p>Meghalaya • Assam • Arunachal Pradesh • Sikkim • Bhutan</p>
 
-    <h3>Our Services</h3>
-    <p>Flight Tickets | Hotel Booking | Car Rental | Tour Packages | Travel Insurance</p>
+<h2 style="text-align:center;color:#0A5FA8;margin-bottom:40px;">
+Popular Destinations
+</h2>
 
-    <p><strong>Phone:</strong> +91 8486467305</p>
-    <p><strong>Email:</strong> milesforsmilestour@gmail.com</p>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;">
 
-    <a class="btn" href="https://wa.me/918486467305">Book on WhatsApp</a>
+<div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:20px;">
+<h3>Meghalaya</h3>
+<p>Living Root Bridges, Waterfalls, Caves and Scenic Hills.</p>
+</div>
+</div>
+
+<div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+<img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:20px;">
+<h3>Assam</h3>
+<p>Kaziranga National Park, Tea Gardens and Brahmaputra River.</p>
+</div>
+</div>
+
+<div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.1);">
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e" style="width:100%;height:220px;object-fit:cover;">
+<div style="padding:20px;">
+<h3>Arunachal Pradesh</h3>
+<p>Snow Mountains, Monasteries and Beautiful Valleys.</p>
+</div>
+</div>
+
+</div>
+
 </section>
 
-<footer>
-<p>© 2026 Miles for Smiles Tours & Travels. All Rights Reserved.</p>
-</footer>
+<section style="background:#eef7ff;">
 
-</body>
-</html>
+<h2 style="text-align:center;color:#0A5FA8;margin-bottom:40px;">
+Our Services
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;">
+
+<div>✈️ Flight Booking</div>
+<div>🏨 Hotel Booking</div>
+<div>🚗 Car Rental</div>
+<div>🧳 Holiday Packages</div>
+<div>🛡️ Travel Insurance</div>
+<div>👨‍👩‍👧 Group Tours</div>
+
+</div>
+
+</section>
+<section>
+
+<h2 style="text-align:center;color:#0A5FA8;margin-bottom:40px;">
+Why Choose Us
+</h2>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
+
+<div style="background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center;">
+⭐ Trusted Travel Partner
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center;">
+💰 Affordable Tour Packages
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center;">
+📞 24×7 Customer Support
+</div>
+
+<div style="background:white;padding:25px;border-radius:12px;box-shadow:0 5px 15px rgba(0,0,0,.1);text-align:center;">
+🚗 Comfortable Transportation
+</div>
+
+</div>
+
+</section>
+
+<section style="background:#0A5FA8;color:white;text-align:center;padding:60px 20px;">
+
+<h2>Contact Us</h2>
+
+<p><strong>Miles for Smiles Tours & Travels</strong></p>
+
+<p>📞 +91 8486467305</p>
+
+<p>📧 milesforsmilestour@gmail.com</p>
+
+<p>📍 Assam, India</p>
+
+<br>
+
+<a href="https://wa.me/918486467305"
+style="background:#25D366;color:white;padding:15px 35px;text-decoration:none;border-radius:30px;font-size:18px;">
+Book on WhatsApp
+</a>
+
+</section>
+
+<footer style="background:#033b69;color:white;text-align
