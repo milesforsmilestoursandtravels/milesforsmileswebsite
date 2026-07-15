@@ -620,3 +620,11 @@ cursor:pointer;
 .booking-form button:hover{
 background:#1aa84f;
 }
+.top-bar{
+background:#0A3D62;
+color:white;
+text-align:center;
+padding:8px;
+font-size:14px;
+font-weight:500;
+}
