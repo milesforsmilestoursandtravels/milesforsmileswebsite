@@ -589,3 +589,34 @@ footer{
 .card a:hover{
     background:#0aa84f;
 }
+.booking-form{
+max-width:700px;
+margin:40px auto;
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+padding:15px;
+font-size:16px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+.booking-form button{
+background:#25D366;
+color:#fff;
+padding:16px;
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+.booking-form button:hover{
+background:#1aa84f;
+}
