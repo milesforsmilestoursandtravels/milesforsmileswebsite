@@ -3,381 +3,413 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Miles for Smiles Tours & Travels</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<style>
+<link rel="stylesheet" href="style.css">
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
-}
-
-body{
-background:#ffffff;
-color:#222;
-overflow-x:hidden;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(7,18,58,.92);
-backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.logo img{
-width:58px;
-height:58px;
-background:#fff;
-border-radius:8px;
-padding:5px;
-}
-
-.logo h2{
-color:#fff;
-font-size:34px;
-font-weight:800;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:35px;
-}
-
-nav a{
-text-decoration:none;
-color:#fff;
-font-weight:600;
-transition:.3s;
-}
-
-nav a:hover{
-color:#00ff99;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-}
-
-.hero-content{
-max-width:950px;
-}
-
-.hero h1{
-font-size:68px;
-font-weight:800;
-color:#fff;
-line-height:1.15;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:24px;
-color:#f2f2f2;
-margin-bottom:40px;
-}
-
-.buttons{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-.btn{
-padding:18px 40px;
-border-radius:50px;
-font-size:18px;
-font-weight:700;
-text-decoration:none;
-transition:.3s;
-}
-
-.whatsapp{
-background:#25D366;
-color:#fff;
-}
-
-.whatsapp:hover{
-transform:translateY(-4px);
-}
-
-.package{
-background:#ffffff;
-color:#07123a;
-}
-
-.package:hover{
-background:#ffd54f;
-}
-
-@media(max-width:768px){
-
-.logo h2{
-font-size:24px;
-}
-
-nav ul{
-gap:15px;
-font-size:14px;
-}
-
-.hero h1{
-font-size:42px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
-</style>
 </head>
 
 <body>
 
-<header>
+<header class="header">
 
-<div class="logo">
-<img src="miles for smiles logo.jpg" alt="Logo">
-<h2>Miles for Smiles</h2>
+<div class="container">
+
+<a href="#home" class="logo">
+
+<img src="miles for smiles logo.jpg" alt="Miles for Smiles Logo">
+
+<span>Miles for Smiles</span>
+
+</a>
+
+<nav class="navbar">
+
+<a href="#home">Home</a>
+<a href="#packages">Packages</a>
+<a href="#gallery">Gallery</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<a href="https://wa.me/918486467305" class="btn-nav">
+Book Now
+</a>
+
 </div>
 
-<nav>
+</header>
+
+<section id="home" class="hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+Explore Meghalaya with
+<span>Miles for Smiles</span>
+</h1>
+
+<p>
+
+Discover waterfalls, crystal-clear rivers, living root bridges,
+luxury stays, and unforgettable adventures across Northeast India.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#packages" class="btn-primary">
+Explore Packages
+</a>
+
+<a href="https://wa.me/918486467305" class="btn-secondary">
+Book on WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="packages" class="packages">
+
+<div class="container">
+
+<h2 class="section-title">
+Featured Tour Packages
+</h2>
+
+<p class="section-subtitle">
+
+Choose from our most popular Northeast India holiday experiences.
+
+</p>
+
+<div class="package-grid">
+
+<div class="package-card">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Shillong">
+
+<div class="package-content">
+
+<h3>Shillong Escape</h3>
+
+<p>3 Days / 2 Nights</p>
+
+<h4>Starting from ₹7,999</h4>
+
+<a href="https://wa.me/918486467305">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<div class="package-card">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Cherrapunji">
+
+<div class="package-content">
+
+<h3>Cherrapunji Explorer</h3>
+
+<p>5 Days / 4 Nights</p>
+
+<h4>Starting from ₹15,999</h4>
+
+<a href="https://wa.me/918486467305">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<div class="package-card">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Dawki">
+
+<div class="package-content">
+
+<h3>Dawki Adventure</h3>
+
+<p>4 Days / 3 Nights</p>
+
+<h4>Starting from ₹11,999</h4>
+
+<a href="https://wa.me/918486467305">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="gallery" class="gallery">
+
+<div class="container">
+
+<h2 class="section-title">Travel Gallery</h2>
+
+<p class="section-subtitle">
+Experience the beauty of Meghalaya through our unforgettable journeys.
+</p>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Meghalaya">
+
+<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" alt="Shillong">
+
+<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Dawki">
+
+<img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Forest">
+
+<img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="Mountains">
+
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="Nature">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<div class="container about-grid">
+
+<div>
+
+<h2 class="section-title">About Miles for Smiles</h2>
+
+<p>
+
+Miles for Smiles Tours & Travels is dedicated to creating unforgettable travel experiences across Meghalaya and Northeast India.
+
+We specialize in family holidays, honeymoon tours, adventure trips, group tours, corporate travel, hotel bookings, and cab services.
+
+</p>
+
+<p>
+
+Our mission is to provide safe, comfortable, and memorable journeys with excellent customer service and carefully planned itineraries.
+
+</p>
+
+</div>
+
+<div class="about-card">
+
+<h3>Why Travel With Us?</h3>
+
 <ul>
-<li><a href="#">Home</a></li>
+
+<li>✔ Premium Tour Packages</li>
+
+<li>✔ Trusted Local Experts</li>
+
+<li>✔ Comfortable Private Vehicles</li>
+
+<li>✔ Verified Hotels</li>
+
+<li>✔ Affordable Pricing</li>
+
+<li>✔ 24×7 Customer Support</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="reviews">
+
+<div class="container">
+
+<h2 class="section-title">What Our Travelers Say</h2>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+★★★★★
+
+<h3>Rahul Sharma</h3>
+
+<p>
+Amazing Meghalaya trip! Everything was perfectly organized and the driver was very professional.
+</p>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<h3>Anita Das</h3>
+
+<p>
+Excellent hotels, beautiful sightseeing, and great support throughout the journey.
+</p>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<h3>Rohan Gupta</h3>
+
+<p>
+One of the best travel experiences. Highly recommended for Meghalaya tours.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<section id="contact" class="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p class="section-subtitle">
+Let's plan your next unforgettable journey.
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<h3>📍 Office</h3>
+
+<p>
+Shillong (Laban), Meghalaya – 793004
+</p>
+
+<p>
+Sonapur, Guwahati, Assam – 782402
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📞 Phone</h3>
+
+<p>+91 8486467304</p>
+
+<p>+91 8486467305</p>
+
+</div>
+
+<div class="contact-card">
+
+<h3>📧 Email</h3>
+
+<p>milesforsmilestour@gmail.com</p>
+
+</div>
+
+</div>
+
+<div class="contact-buttons">
+
+<a href="https://wa.me/918486467305" class="btn-primary">
+Book on WhatsApp
+</a>
+
+<a href="mailto:milesforsmilestour@gmail.com" class="btn-secondary">
+Send Email
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container footer-content">
+
+<div>
+
+<h3>Miles for Smiles Tours & Travels</h3>
+
+<p>
+Explore Meghalaya, Assam, Arunachal Pradesh, Sikkim & Bhutan with trusted local experts.
+</p>
+
+</div>
+
+<div>
+
+<h4>Quick Links</h4>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
 <li><a href="#packages">Packages</a></li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
+
 </ul>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<div class="hero-content">
-
-<h1>Discover Meghalaya in Luxury</h1>
-
-<p>Luxury Tours • Honeymoon • Family Trips • Adventure Experiences</p>
-
-<div class="buttons">
-
-<a class="btn whatsapp"
-href="https://wa.me/918486467304">
-Book on WhatsApp
-</a>
-
-<a class="btn package"
-href="#packages">
-Explore Packages
-</a>
 
 </div>
 
-</div>
+<div>
 
-</section>
-<style>
+<h4>Follow Us</h4>
 
-.section-title{
-text-align:center;
-font-size:42px;
-font-weight:800;
-margin:80px 0 15px;
-color:#07123a;
-}
-
-.section-subtitle{
-text-align:center;
-color:#666;
-margin-bottom:50px;
-font-size:18px;
-}
-
-.packages{
-padding:40px 8% 90px;
-background:#f8fbff;
-}
-
-.package-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-}
-
-.card{
-background:#fff;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 15px 35px rgba(0,0,0,.12);
-transition:.35s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img{
-width:100%;
-height:220px;
-object-fit:cover;
-}
-
-.card-content{
-padding:25px;
-}
-
-.card-content h3{
-font-size:28px;
-margin-bottom:10px;
-color:#07123a;
-}
-
-.card-content p{
-color:#666;
-line-height:1.7;
-margin-bottom:20px;
-}
-
-.price{
-font-size:24px;
-font-weight:800;
-color:#00a
- <section id="about" style="padding:80px 8%;background:#ffffff;">
-
-<h2 class="section-title">Why Choose Miles for Smiles?</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;">
-
-<div class="card">
-<div class="card-content">
-<h3>🏔️ Local Experts</h3>
-<p>Experienced local guides helping you discover the hidden beauty of Northeast India.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="card-content">
-<h3>🚗 Comfortable Travel</h3>
-<p>Clean vehicles, professional drivers and carefully selected hotels.</p>
-</div>
-</div>
-
-<div class="card">
-<div class="card-content">
-<h3>⭐ Trusted Service</h3>
-<p>Hundreds of happy travellers with personalized holiday experiences.</p>
-</div>
-</div>
-
-</div>
-
-</section>
-
-<section id="gallery" style="padding:80px 8%;background:#f8fbff;">
-
-<h2 class="section-title">Travel Gallery</h2>
-
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;">
-
-<img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
-
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
-
-<img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" style="width:100%;border-radius:15px;">
-
-</div>
-
-</section>
-
-<section id="contact" style="padding:80px 8%;background:#07123a;color:white;text-align:center;">
-
-<h2 style="font-size:42px;margin-bottom:25px;">Contact Us</h2>
-
-<p style="font-size:20px;">
-<strong>Miles for Smiles Tours & Travels</strong>
+<p>
+Facebook
 </p>
 
-<p>📞 +91 8486467305</p>
+<p>
+Instagram
+</p>
 
-<p>📧 milesforsmilestour@gmail.com</p>
+</div>
 
-<p>📍 Shillong (Laban), Meghalaya – 793004</p>
+</div>
 
-<p>📍 Sonapur, Guwahati, Assam – 782402</p>
+<div class="copyright">
 
-<br>
+© 2026 Miles for Smiles Tours & Travels. All Rights Reserved.
 
-<a href="https://wa.me/918486467305"
-style="display:inline-block;background:#25D366;color:white;padding:16px 36px;border-radius:40px;text-decoration:none;font-weight:bold;">
-Book on WhatsApp
-</a>
-
-</section>
-
-<footer style="background:#041033;color:white;text-align:center;padding:30px;">
-
-<h3>Miles for Smiles Tours & Travels</h3>
-
-<p>Explore More • Smile More</p>
-
-<p>© 2026 All Rights Reserved</p>
+</div>
 
 </footer>
 
+<a href="https://wa.me/918486467305" class="floating-whatsapp">
+💬
+</a>
+
+<script src="script.js"></script>
+
 </body>
-</html> 
-<section id="packages">
-  <h2>Our Packages</h2>
-  <p>Coming Soon...</p>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <p>Coming Soon...</p>
-</section>
-
-<section id="about">
-  <h2>About Us</h2>
-  <p>Miles for Smiles Tours & Travels offers luxury Meghalaya tour packages.</p>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Phone: 8486467304</p>
-  <p>Email: your@email.com</p>
-</section>
+</html>
